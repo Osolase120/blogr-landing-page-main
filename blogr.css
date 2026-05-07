@@ -49,11 +49,11 @@ nav.active {
 }
 
 .menuToggle.active #openBtn {
-  display: none; /* hide hamburger */
+  display: none;
 }
 
 .menuToggle.active .closeHamburger {
-  display: block; /* show close icon */
+  display: block;
 }
 
 .closeHamburger {
@@ -73,20 +73,6 @@ nav.active {
     text-align: center;
     position: relative;
 }
-
-/* .dropDown li {
-    position: relative;
-    padding-bottom: 20px 0;
-} */
-
-/* .dropDown a {
-    color: hsl(240, 10%, 16%);
-    font-family: 'Overpass', sans-serif;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: .6rem
-} */
 
 .dropDown-menu  {
     position: relative;
@@ -125,10 +111,6 @@ nav.active {
     margin-right: 40px;
 }
 
-/* .dropDown-content li {
-    padding-bottom: 5px;
-} */
-
 .dropDown-content a {
     color: hsl(207, 13%, 34%);
 }
@@ -161,7 +143,6 @@ hr {
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    /* margin-top: 20px; */
 }
 
 .Login button {
@@ -311,13 +292,10 @@ main {
 .secondSection {
     position: relative;
     top: 23rem;
-    /* left: -10px; */
     background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
     border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
     height: 43rem;
-    /* width: 480px */
-    /* overflow: hidden; */
 }
 
 .circlesPic {
@@ -338,7 +316,6 @@ main {
     top: -54rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .State {
@@ -532,7 +509,6 @@ hr {
     border-bottom-left-radius: 100px;
     height: 37.5rem;
     width: 375px;
-    /* overflow: hidden; */
 }
 
 .circlesPic {
@@ -553,7 +529,6 @@ hr {
     top: -45rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .State {
@@ -690,19 +665,13 @@ nav {
     flex-direction: row;
     align-items: center;
     text-align: left;
-    /* position: relative; */
 }
 
 .dropDown li {
     position: relative;
-    /* padding-bottom: 20px 0; */
 }
 
 .dropDown a {
-    /* color: hsl(240, 10%, 16%);
-    font-family: 'Overpass', sans-serif; */
-    /* display: flex;
-    align-items: center; */
     display: block;
     padding: 5px 15px;
     text-decoration: none;
@@ -851,7 +820,6 @@ main {
 .Introducing {
     position: relative;
     top: 180px;
-    /* left: 10rem; */
     color: hsl(237, 23%, 31%);
     font-family: 'Overpass', sans-serif;
     text-align: left;
@@ -871,7 +839,6 @@ main {
 .Robust {
     position: relative;
     top: 240px;
-    /* left: 9rem; */
     color: hsl(237, 23%, 31%);
     font-family: 'Overpass', sans-serif;
     text-align: left;
@@ -891,14 +858,11 @@ main {
 .secondSection {
     position: relative;
     top: 1rem;
-    /* left: -10px; */
     background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
     border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
     height: 26rem;
-    /* width: 480px; */
     display: flex;
-    /* overflow: hidden; */
 }
 
 .secondSection article {
@@ -914,7 +878,6 @@ main {
 .circles {
     position: relative;
     top: -15rem;
-    /* width: 650px; */
 }
 
 .phonePic {
@@ -922,7 +885,6 @@ main {
     top: -50rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .State {
@@ -956,9 +918,6 @@ main {
 .laptopPic {
     position: relative;
     left: -18rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .Free {
@@ -1037,11 +996,6 @@ footer img {
     top: 70px;
     left: 140px;
 }
-
-/* .footer-group {
-    position: relative;
-    top: 5rem;
-} */
 
 .footer-group  li {
     padding-top: 15px;
