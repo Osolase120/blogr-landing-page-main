@@ -1,0 +1,1022 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 100%);
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+header {
+    background-color:  hsl(356, 100%, 66%);
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-position: -28.5rem -22rem;
+    background-repeat: no-repeat;  
+    background-size: 95rem;
+    border-bottom-left-radius: 200px;
+    padding: 20px;
+    height: 45rem;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    top: 40px;
+}
+
+nav {
+    display: none;
+    background-color: hsl(0, 100%, 100%);
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    height: 37.5rem;
+}
+
+nav.active {
+    display: block;
+}
+
+.menuToggle {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+}
+
+.menuToggle.active #openBtn {
+  display: none;
+}
+
+.menuToggle.active .closeHamburger {
+  display: block;
+}
+
+.closeHamburger {
+    position: absolute;
+    top: -4px;
+    right: 2px;
+    display: none;
+}
+
+
+/* change direction to row in desktop */
+.dropDown {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.dropDown-menu  {
+    position: relative;
+    top: 15px;
+    padding-bottom: 35px;
+}
+
+.dropDown-menu a {
+    color: hsl(240, 10%, 16%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.arrow-dark {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when active (clicked on mobile) */
+.dropDown-menu.active .arrow-dark {
+  transform: rotate(180deg);
+}
+
+.dropDown-content {
+    position: static;
+    background-color: hsla(207, 13%, 34%, 0.1);
+    color: hsla(207, 13%, 34%, 0.1);
+    list-style: none;
+    padding: 20px 0;
+    height: 170px;
+    width: 300px;
+    display: none;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.dropDown-content a {
+    color: hsl(207, 13%, 34%);
+}
+
+.dropDown-content li.Overview {
+    padding: 1px 0 10px 0;
+}
+
+.dropDown-content li.About {
+    padding: 1px 0 18px 0;
+}
+
+.dropDown-content li.Contact {
+    padding: 12px 0 10px 0;
+}
+
+.dropDown-menu.active .dropDown-content {
+    display: block;
+}
+
+hr {
+    position: relative;
+    border: 1px solid hsla(237, 23%, 31%, 0.2);
+    width: 300px;
+    margin-left: 25px;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.Login button {
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.Login button:first-child {
+    background-color: hsl(0, 100%, 100%);
+    font-weight: 300;
+}
+
+.Login button:last-child {
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border: none;
+    border-radius: 25px;
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+}
+
+.CTA {
+    position: relative;
+    top: 9rem;
+    font-family: "Overpass", sans-serif;
+}
+
+.CTA h1 {
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.CTA p {
+    color: hsl(0, 100%, 100%);
+    position: absolute;
+    top: 110px;
+    font-family: 'Overpass', sans-serif;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.CTAbtn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 105px;
+}
+
+.CTAbtn button {
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    height: 50px;
+    width: 140px;
+}
+
+
+.CTAbtn button:first-child {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(353, 100%, 62%);
+}
+
+.CTAbtn button:first-child:hover {
+    background-color: hsl(353, 100%, 62%);
+    color: hsl(0, 100%, 100%);
+}
+
+.CTAbtn button:last-child {
+    background-color: hsl(353, 100%, 62%);
+    border: 1px solid hsl(0, 100%, 100%);
+    color: hsl(0, 100%, 100%);
+}
+
+.CTAbtn button:last-child:hover {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(353, 100%, 62%);
+}
+
+main {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+}
+
+.firstSection {
+    position: relative;
+}
+
+.firstSection h1 {
+    color: hsl(237, 17%, 21%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.editorPic {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Introducing {
+    position: relative;
+    top: 90px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.Introducing h1 {
+    padding: 0 80px;
+}
+
+.Introducing p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px 36px;
+}
+
+.Robust {
+    position: relative;
+    top: 130px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.Robust h1 {
+    padding: 0 70px;
+}
+
+.Robust p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 44px;
+}
+
+.secondSection {
+    position: relative;
+    top: 23rem;
+    background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    height: 43rem;
+}
+
+.circlesPic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circles {
+    position: relative;
+    top: -10rem;
+    width: 650px;
+}
+
+.phonePic {
+    position: relative;
+    top: -54rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.State {
+    position: relative;
+    top: -54.5rem;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.State h1 {
+    padding: 0 70px;
+}
+
+.State p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px 39px;
+}
+
+.thirdSection {
+    position: relative;
+    top: 28rem;
+
+}
+
+.laptopPic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Free {
+    position: relative;
+    top: 20px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.Free p {
+    padding: 10px 38px;
+    line-height: 1.6;
+}
+
+.Powerful {
+    position: relative;
+    top: 40px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.Powerful p {
+    line-height: 1.6;
+    padding: 15px 40px;
+}
+
+footer {
+    position: relative;
+    top: 36rem;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 120px;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    padding: 20px;
+    text-align: center;
+    height: 58rem;
+}
+
+footer ul li  {
+    list-style: none;
+}
+
+footer a {
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+}
+
+.footer-group a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer img {
+    position: relative;
+    top: 40px;
+}
+
+.footer-group {
+    position: relative;
+    top: 5rem;
+}
+
+.footer-group  li {
+    padding-top: 15px;
+}
+
+.Company {
+    position: relative;
+    top: 70px;
+}
+
+.Product-list,.Company-list,.Connect-list {
+    padding: 20px 0;
+}
+
+.Connect {
+    position: relative;
+    top: 120px
+}
+
+.attribution {
+    position: relative;
+    top: 36rem;
+}
+
+@media screen and (max-width: 375px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header {
+    background-color:  hsl(356, 100%, 66%);
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-position: -29rem -20.5rem;
+    background-repeat: no-repeat;  
+    background-size: 95rem;
+    border-bottom-left-radius: 200px;
+    padding: 20px;
+    height: 45rem;
+}
+
+.dropDown-content {
+    width: 250px;
+}
+
+hr {
+    width: 250px;
+    margin-left: 45px;
+}
+
+.CTA h1 {
+    padding: 10px 20px;
+}
+
+.CTA p {
+    color: hsl(0, 100%, 100%);
+    position: absolute;
+    top: 110px;
+    font-family: 'Overpass', sans-serif;
+    padding: 0 22px;
+    text-align: center;
+}
+
+.Introducing {
+    color: hsl(237, 23%, 31%);
+}
+
+.Introducing h1 {
+    padding: 0 20px;
+}
+
+.Introducing p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px 27px;
+}
+
+.Robust {
+    color: hsl(237, 23%, 31%);
+}
+
+.Robust h1 {
+    padding: 0 20px;
+}
+
+.Robust p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 27px;
+}
+
+.secondSection {
+    position: relative;
+    top: 23rem;
+    background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 37.5rem;
+    width: 375px;
+}
+
+.circlesPic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circles {
+    position: relative;
+    top: -12.5rem;
+    width: 580px;
+}
+
+.phonePic {
+    position: relative;
+    top: -45rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.State {
+    position: relative;
+    top: -45rem;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.State h1 {
+    padding: 0 20px;
+}
+
+.State p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px 35px;
+}
+
+.Free p {
+    padding: 10px 30px;
+    line-height: 1.6;
+}
+
+.Powerful p {
+    line-height: 1.6;
+    padding: 15px 27px;
+}
+
+footer {
+    position: relative;
+    top: 37rem;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 120px;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    padding: 20px;
+    text-align: center;
+    height: 58rem;
+}
+
+footer ul li  {
+    list-style: none;
+}
+
+footer a {
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+}
+
+.footer-group a:hover {
+    cursor: pointer;
+    text-decoration: red;
+}
+
+footer img {
+    position: relative;
+    top: 40px;
+}
+
+.footer-group {
+    position: relative;
+    top: 5rem;
+}
+
+.footer-group  li {
+    padding-top: 15px;
+}
+
+.Company {
+    position: relative;
+    top: 70px;
+}
+
+.Product-list,.Company-list,.Connect-list {
+    padding: 20px 0;
+}
+
+.Connect {
+    position: relative;
+    top: 120px
+}
+
+.attribution {
+    position: relative;
+    top: 37rem;
+}
+    
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+header {
+    background-color:  hsl(356, 100%, 66%);
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-position: 0 -52rem;
+    background-repeat: no-repeat;  
+    background-size: 150%;
+    border-bottom-left-radius: 140px;
+    padding: 20px;
+    height: 35rem;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    top: 40px;
+    margin-left: 140px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsla(0, 100%, 100%, 0);
+    position: relative;
+    top: 0;
+    left: 15rem;
+    height: 40px;
+    width: 70%;
+}
+
+.menuToggle {
+    display: none;
+}
+
+.dropDown {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.dropDown li {
+    position: relative;
+}
+
+.dropDown a {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    gap: .6rem
+
+}
+
+.dropDown-menu  {
+    position: absolute;
+    left: 0;
+}
+
+.dropDown-menu a {
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Rotate on hover (desktop) */
+.dropDown-menu:hover .arrow-dark {
+  transform: rotate(180deg);
+}
+
+.dropDown-content {
+    position: absolute;
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(207, 13%, 34%);
+    list-style: none;
+    padding: 0;
+    height: 170px;
+    width: 160px;
+    display: none;
+    margin-top: 10px;
+}
+
+.dropDown-content a {
+    color: hsl(207, 13%, 34%);
+}
+
+.dropDown-content li.Overview {
+    padding: 2px 0 1px 0;
+}
+
+.dropDown-content li.About {
+    padding: 8px 0 1px 0;
+}
+
+.dropDown-content li.Contact {
+    padding: 12px 0 1px 0;
+}
+
+.dropDown-menu:hover .dropDown-content {
+  display: block;
+}
+
+hr {
+    display: none;
+}
+
+.Login {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* margin-top: 20px; */
+}
+
+.Login button {
+    cursor: pointer;
+    height: 40px;
+    width: 95px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.Login button:first-child {
+    background-color: hsla(13, 100%, 72%, 0);
+    color: hsl(0, 100%, 100%);
+    font-weight: 300;
+}
+
+.Login button:last-child {
+    background: hsl(0, 100%, 100%);
+    border: none;
+    border-radius: 25px;
+    color: hsl(13, 100%, 72%);
+    font-weight: 600;
+}
+
+.Login button:last-child:hover {
+    background: hsl(356, 100%, 66%);
+    border: none;
+    border-radius: 25px;
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+}
+
+.CTA {
+    position: relative;
+    top: 8rem;
+    font-family: "Overpass", sans-serif;
+}
+
+.CTA h1 {
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+    font-size: 4.5rem;
+    padding: 10px 70px;
+    text-align: center;
+}
+
+.CTA p {
+    color: hsl(0, 100%, 100%);
+    position: absolute;
+    top: 110px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 26.8rem;
+    /* text-align: center; */
+}
+
+.CTAbtn {
+    top: 90px;
+}
+
+main {
+    position: relative;
+    top: 70px;
+    padding: 10px;
+}
+
+.firstSection article {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.editorPic {
+    position: relative;
+    top: -45px;
+    margin-right: -16rem;
+}
+
+.Introducing {
+    position: relative;
+    top: 180px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+}
+
+.Introducing h1 {
+    padding: 0;
+    margin-left: -37px;
+}
+
+.Introducing p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px 117px;
+}
+
+.Robust {
+    position: relative;
+    top: 240px;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+}
+
+.Robust h1 {
+    padding: 0;
+    margin-left: -78px;
+}
+
+.Robust p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 125px;
+}
+
+.secondSection {
+    position: relative;
+    top: 1rem;
+    background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    height: 26rem;
+    display: flex;
+}
+
+.secondSection article {
+    display: flex;
+}
+
+.circlesPic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.circles {
+    position: relative;
+    top: -15rem;
+}
+
+.phonePic {
+    position: relative;
+    top: -50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.State {
+    position: relative;
+    top: 8rem;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+}
+
+.State h1 {
+    padding: 0 126px;
+}
+
+.State p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px 126px;
+}
+
+.thirdSection {
+    position: relative;
+    top: 28rem;
+
+}
+
+.thirdSection article {
+    display: flex;
+}
+
+.laptopPic {
+    position: relative;
+    left: -18rem;
+}
+
+.Free {
+    position: relative;
+    top: 203px;
+    margin-left: -28rem;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+}
+
+.Free h1 {
+    padding: 0 192px;
+}
+
+.Free p {
+    padding: 10px 192px;
+    line-height: 1.6;
+}
+
+.Powerful {
+    position: relative;
+    top: 240px;
+    margin-left: -28rem;
+    color: hsl(237, 23%, 31%);
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+}
+
+.Powerful h1 {
+    padding: 0 190px;
+}
+
+.Powerful p {
+    line-height: 1.6;
+    padding: 15px 190px;
+}
+
+footer {
+    position: relative;
+    top: 36rem;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 120px;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Overpass', sans-serif;
+    padding: 10px;
+    text-align: left;
+    height: 24rem;
+    display: flex;
+}
+
+footer ul li  {
+    list-style: none;
+}
+
+footer a {
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 130px;
+    width: 65%;
+}
+
+.footer-group a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer img {
+    position: relative;
+    top: 70px;
+    left: 140px;
+}
+
+.footer-group  li {
+    padding-top: 15px;
+}
+
+ .Company {
+    position: relative;
+    top: 0;
+}
+
+.Product-list,.Company-list,.Connect-list {
+    padding: 10px 0;
+}
+
+.Connect {
+    position: relative;
+    top: 0
+}
+
+.attribution {
+    position: relative;
+    top: 37rem;
+}
+}
