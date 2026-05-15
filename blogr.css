@@ -5,87 +5,41 @@
 }
 
 body {
-    min-height: 100vh;
     background-color: hsl(0, 100%, 100%);
-    overflow-x: hidden;
     font-size: 16px;
+    min-height: 100vh;
+    min-width: 100%;
 }
 
 header {
-    background-color:  hsl(356, 100%, 66%);
+    background-color: hsl(356, 100%, 66%);
     background-image: url(./images/bg-pattern-intro-mobile.svg);
-    background-position: -28.5rem -22rem;
+    background-position: -460px -435px;
     background-repeat: no-repeat;  
-    background-size: 95rem;
-    border-bottom-left-radius: 200px;
-    padding: 20px;
-    height: 45rem;
-    width: 100%;
+    background-size: 100rem;
+    border-bottom-left-radius: 170px;
+    height: 40rem;
+    width: auto;
 }
 
 .logo {
     position: relative;
     top: 40px;
+    margin-left: 40px;
 }
 
 nav {
     display: none;
     background-color: hsl(0, 100%, 100%);
     padding: 40px 0;
-    text-align: center;
     position: relative;
     top: 60px;
     height: 37.5rem;
+    text-align: center;
 }
 
 nav.active {
     display: block;
-}
-
-.menuToggle {
-    position: absolute;
-    top: 70px;
-    right: 40px;
-}
-
-.menuToggle.active #openBtn {
-  display: none;
-}
-
-.menuToggle.active .closeHamburger {
-  display: block;
-}
-
-.closeHamburger {
-    position: absolute;
-    top: -4px;
-    right: 2px;
-    display: none;
-}
-
-
-/* change direction to row in desktop */
-.dropDown {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.dropDown-menu  {
-    position: relative;
-    top: 15px;
-    padding-bottom: 35px;
-}
-
-.dropDown-menu a {
-    color: hsl(240, 10%, 16%);
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
 }
 
 .arrow-dark {
@@ -96,6 +50,51 @@ nav.active {
 /* Rotate when active (clicked on mobile) */
 .dropDown-menu.active .arrow-dark {
   transform: rotate(180deg);
+}
+
+.menuToggle {
+    position: absolute;
+    top: 50px;
+    right: 40px; 
+}
+
+.menuToggle.active .openHamburger {
+  display: none; 
+}
+
+.menuToggle.active .closeHamburger {
+  display: block; 
+}
+
+.closeHamburger {
+    position: absolute;
+    top: -4px;
+    right: 2px;
+    display: none;
+}
+
+/* change direction to row in desktop */
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.dropDown-menu  {
+    position: relative;
+    top: 15px;
+    padding-bottom: 35px;
+}
+
+.dropDown-menu a {
+    color: hsl(240, 10%, 16%);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .dropDown-content {
@@ -116,7 +115,7 @@ nav.active {
 }
 
 .dropDown-content li.Overview {
-    padding: 1px 0 10px 0;
+    padding: 1px 0 5px 0;
 }
 
 .dropDown-content li.About {
@@ -131,11 +130,15 @@ nav.active {
     display: block;
 }
 
+div.hr {
+    display: flex;
+    justify-content: center;
+}
+
 hr {
     position: relative;
     border: 1px solid hsla(237, 23%, 31%, 0.2);
     width: 300px;
-    margin-left: 25px;
 }
 
 .Login {
@@ -156,7 +159,7 @@ hr {
 
 .Login button:first-child {
     background-color: hsl(0, 100%, 100%);
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .Login button:last-child {
@@ -164,19 +167,19 @@ hr {
     border: none;
     border-radius: 25px;
     color: hsl(0, 100%, 100%);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .CTA {
     position: relative;
     top: 9rem;
-    font-family: "Overpass", sans-serif;
 }
 
 .CTA h1 {
     color: hsl(0, 100%, 100%);
+    font-family: "Overpass", sans-serif;
     font-weight: 600;
-    padding: 10px 25px;
+    padding: 10px 45px;
     text-align: center;
 }
 
@@ -201,12 +204,11 @@ hr {
     border: none;
     border-radius: 23px;
     cursor: pointer;
-    font-family: 'Overpass', sans-serif;
-    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     height: 50px;
     width: 140px;
 }
-
 
 .CTAbtn button:first-child {
     background-color: hsl(0, 100%, 100%);
@@ -253,6 +255,10 @@ main {
     align-items: center;
 }
 
+.editorPic img {
+    width: 100%;
+}
+
 .Introducing {
     position: relative;
     top: 90px;
@@ -262,7 +268,7 @@ main {
 }
 
 .Introducing h1 {
-    padding: 0 80px;
+    padding: 0 90px;
 }
 
 .Introducing p {
@@ -292,10 +298,11 @@ main {
 .secondSection {
     position: relative;
     top: 23rem;
+    right: 9.6px;
     background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
-    border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
-    height: 43rem;
+    height: 37rem;
+    width: 390px;
 }
 
 .circlesPic {
@@ -307,20 +314,23 @@ main {
 
 .circles {
     position: relative;
-    top: -10rem;
-    width: 650px;
+    top: -16rem;
+    width: 40rem;
 }
 
 .phonePic {
-    position: relative;
-    top: -54rem;
     display: flex;
     flex-direction: column;
 }
 
+.phones {
+    position: relative;
+    top: -54rem;
+}
+
 .State {
     position: relative;
-    top: -54.5rem;
+    top: -49.6rem;
     color: hsl(0, 100%, 100%);
     font-family: 'Overpass', sans-serif;
     text-align: center;
@@ -343,10 +353,13 @@ main {
 }
 
 .laptopPic {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.laptopPic img { 
+    width: 100%;
 }
 
 .Free {
@@ -382,7 +395,6 @@ footer {
     border-top-right-radius: 120px;
     color: hsl(0, 100%, 100%);
     font-family: 'Overpass', sans-serif;
-    padding: 20px;
     text-align: center;
     height: 58rem;
 }
@@ -408,7 +420,7 @@ footer img {
 
 .footer-group {
     position: relative;
-    top: 5rem;
+    top: 7rem;
 }
 
 .footer-group  li {
@@ -431,16 +443,11 @@ footer img {
 
 .attribution {
     position: relative;
-    top: 36rem;
+    top: 37rem;
 }
 
 @media screen and (max-width: 375px) {
-
-    body, html {
-        overflow-x: hidden;
-    }
-
-    header {
+header {
     background-color:  hsl(356, 100%, 66%);
     background-image: url(./images/bg-pattern-intro-mobile.svg);
     background-position: -29rem -20.5rem;
@@ -453,6 +460,10 @@ footer img {
 
 .dropDown-content {
     width: 250px;
+}
+
+.dropDown-content li.Overview {
+    padding: 1px 0 7px 0;
 }
 
 hr {
@@ -504,10 +515,10 @@ hr {
 .secondSection {
     position: relative;
     top: 23rem;
+    right: 9.6px;
     background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    height: 37.5rem;
+    border-bottom-left-radius: 120px;
+    height: 37rem;
     width: 375px;
 }
 
@@ -520,33 +531,18 @@ hr {
 
 .circles {
     position: relative;
-    top: -12.5rem;
-    width: 580px;
+    top: -16rem;
+    width: 40rem;
 }
 
 .phonePic {
-    position: relative;
-    top: -45rem;
     display: flex;
     flex-direction: column;
 }
 
-.State {
+.phones {
     position: relative;
-    top: -45rem;
-    color: hsl(0, 100%, 100%);
-    font-family: 'Overpass', sans-serif;
-    text-align: center;
-}
-
-.State h1 {
-    padding: 0 20px;
-}
-
-.State p {
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 20px 35px;
+    top: -54rem;
 }
 
 .Free p {
@@ -559,70 +555,15 @@ hr {
     padding: 15px 27px;
 }
 
-footer {
-    position: relative;
-    top: 37rem;
-    background-color: hsl(240, 10%, 16%);
-    border-top-right-radius: 120px;
-    color: hsl(0, 100%, 100%);
-    font-family: 'Overpass', sans-serif;
-    padding: 20px;
-    text-align: center;
-    height: 58rem;
-}
-
-footer ul li  {
-    list-style: none;
-}
-
-footer a {
-    color: hsl(0, 100%, 100%);
-    text-decoration: none;
-}
-
-.footer-group a:hover {
-    cursor: pointer;
-    text-decoration: red;
-}
-
-footer img {
-    position: relative;
-    top: 40px;
-}
-
-.footer-group {
-    position: relative;
-    top: 5rem;
-}
-
-.footer-group  li {
-    padding-top: 15px;
-}
-
-.Company {
-    position: relative;
-    top: 70px;
-}
-
-.Product-list,.Company-list,.Connect-list {
-    padding: 20px 0;
-}
-
-.Connect {
-    position: relative;
-    top: 120px
-}
-
-.attribution {
-    position: relative;
-    top: 37rem;
-}
-    
-}
 
 
+}
 
 @media screen and (min-width: 1440px) {
+
+/* * {
+  outline: 1px solid red;
+} */
 
 header {
     background-color:  hsl(356, 100%, 66%);
@@ -737,7 +678,6 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    /* margin-top: 20px; */
 }
 
 .Login button {
@@ -817,6 +757,10 @@ main {
     margin-right: -16rem;
 }
 
+.editorPic img {
+    width: 925px;
+}
+
 .Introducing {
     position: relative;
     top: 180px;
@@ -833,7 +777,7 @@ main {
 .Introducing p {
     font-size: 16px;
     line-height: 1.5;
-    padding: 15px 117px;
+    padding: 15px 124px;
 }
 
 .Robust {
@@ -862,6 +806,7 @@ main {
     border-top-right-radius: 120px;
     border-bottom-left-radius: 120px;
     height: 26rem;
+    width: 1424px;
     display: flex;
 }
 
@@ -873,18 +818,24 @@ main {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .circles {
     position: relative;
     top: -15rem;
+    width: 650px;
 }
 
 .phonePic {
-    position: relative;
-    top: -50rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.phonePic img {
+    position: relative;
+    top: -50rem;
 }
 
 .State {
@@ -895,14 +846,9 @@ main {
     text-align: left;
 }
 
-.State h1 {
-    padding: 0 126px;
-}
-
 .State p {
     font-size: 16px;
     line-height: 1.6;
-    padding: 20px 126px;
 }
 
 .thirdSection {
@@ -918,6 +864,10 @@ main {
 .laptopPic {
     position: relative;
     left: -18rem;
+}
+
+.laptopPic img { 
+    width: 974px;
 }
 
 .Free {
@@ -982,6 +932,7 @@ footer a {
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    top: 4.5rem;
     left: 130px;
     width: 65%;
 }
@@ -997,17 +948,9 @@ footer img {
     left: 140px;
 }
 
-.footer-group  li {
-    padding-top: 15px;
-}
-
  .Company {
     position: relative;
     top: 0;
-}
-
-.Product-list,.Company-list,.Connect-list {
-    padding: 10px 0;
 }
 
 .Connect {
@@ -1017,6 +960,6 @@ footer img {
 
 .attribution {
     position: relative;
-    top: 37rem;
+    top: 38rem;
 }
 }
