@@ -34,7 +34,9 @@ nav {
     padding: 40px 0;
     position: relative;
     top: 60px;
+    left: 20px;
     height: 37.5rem;
+    width: 90%;
     text-align: center;
 }
 
@@ -468,7 +470,7 @@ header {
 
 hr {
     width: 250px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
 }
 
 .CTA h1 {
