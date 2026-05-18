@@ -298,11 +298,11 @@ main {
 .secondSection {
     position: relative;
     top: 23rem;
-    right: 9.6px;
+    /* right: 9.6px; */
     background: linear-gradient(hsl(237, 23%, 21%), hsl(237, 23%, 31%));
     border-bottom-left-radius: 120px;
     height: 37rem;
-    width: 390px;
+    width: 100%;
 }
 
 .circlesPic {
